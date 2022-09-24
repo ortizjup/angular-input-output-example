@@ -1,0 +1,6 @@
+<div class="continer">
+  <h1 class="alert alert-danger" [hidden]="this.notification == ''">{{this.notification}}</h1>
+  <app-chil-comp [model]="numbers" (readyNotification)="showNotification($event)"></app-chil-comp>
+</div>
+
+  
